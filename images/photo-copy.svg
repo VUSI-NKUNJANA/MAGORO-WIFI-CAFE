@@ -1,0 +1,9 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="30" fill="#0f172a"/>
+  <rect x="180" y="120" width="440" height="260" rx="24" fill="#111827" stroke="#fb923c" stroke-width="3"/>
+  <rect x="235" y="180" width="330" height="150" rx="18" fill="#1e293b"/>
+  <circle cx="320" cy="250" r="45" fill="#fde68a"/>
+  <path d="M275 310h220" stroke="#fb923c" stroke-width="14" stroke-linecap="round"/>
+  <path d="M300 210l45 45 80-85" stroke="#f8fafc" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="400" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#ffffff">Photo Copy</text>
+</svg>

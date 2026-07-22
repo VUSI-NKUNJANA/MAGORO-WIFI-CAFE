@@ -1,0 +1,13 @@
+<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="600" rx="32" fill="#0f172a"/>
+  <rect x="140" y="120" width="620" height="340" rx="28" fill="#111827" stroke="#2ea8ff" stroke-width="3"/>
+  <rect x="220" y="175" width="220" height="180" rx="22" fill="#1e293b"/>
+  <path d="M245 320h170" stroke="#2ea8ff" stroke-width="14" stroke-linecap="round"/>
+  <path d="M280 260h100" stroke="#f8fafc" stroke-width="12" stroke-linecap="round"/>
+  <path d="M280 290h70" stroke="#94a3b8" stroke-width="12" stroke-linecap="round"/>
+  <rect x="470" y="190" width="180" height="24" rx="12" fill="#f8fafc"/>
+  <rect x="470" y="230" width="140" height="20" rx="10" fill="#94a3b8"/>
+  <rect x="470" y="266" width="160" height="20" rx="10" fill="#94a3b8"/>
+  <rect x="470" y="310" width="120" height="42" rx="14" fill="#6c5ce7"/>
+  <text x="450" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#ffffff">Visit Us</text>
+</svg>

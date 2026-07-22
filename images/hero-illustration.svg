@@ -1,0 +1,14 @@
+<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="600" rx="36" fill="#0f172a"/>
+  <rect x="120" y="120" width="660" height="360" rx="30" fill="#111827" stroke="#2ea8ff" stroke-width="3"/>
+  <rect x="190" y="190" width="220" height="220" rx="20" fill="#1e293b"/>
+  <rect x="450" y="190" width="240" height="120" rx="18" fill="#f8fafc"/>
+  <rect x="450" y="330" width="240" height="80" rx="18" fill="#2ea8ff"/>
+  <circle cx="300" cy="300" r="70" fill="#38bdf8"/>
+  <path d="M250 300h100" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M300 250v100" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M470 225h180" stroke="#334155" stroke-width="12" stroke-linecap="round"/>
+  <path d="M470 255h140" stroke="#94a3b8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M470 360h120" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+  <text x="450" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#ffffff">Connected Services</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="30" fill="#0f172a"/>
+  <rect x="220" y="110" width="360" height="280" rx="24" fill="#111827" stroke="#38bdf8" stroke-width="3"/>
+  <rect x="290" y="150" width="220" height="260" rx="22" fill="#f8fafc"/>
+  <circle cx="400" cy="245" r="52" fill="#cbd5e1"/>
+  <path d="M340 325c20-30 60-30 80 0" stroke="#334155" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <rect x="330" y="190" width="140" height="20" rx="10" fill="#38bdf8"/>
+  <text x="400" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#ffffff">ID Photo</text>
+</svg>

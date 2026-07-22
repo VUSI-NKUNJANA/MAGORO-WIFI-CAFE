@@ -1,0 +1,12 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="30" fill="#0f172a"/>
+  <rect x="170" y="120" width="460" height="260" rx="24" fill="#111827" stroke="#4ade80" stroke-width="3"/>
+  <rect x="220" y="170" width="360" height="170" rx="20" fill="#f8fafc"/>
+  <rect x="255" y="205" width="145" height="14" rx="7" fill="#334155"/>
+  <rect x="255" y="235" width="200" height="14" rx="7" fill="#94a3b8"/>
+  <rect x="255" y="265" width="100" height="14" rx="7" fill="#94a3b8"/>
+  <rect x="445" y="230" width="90" height="46" rx="10" fill="#4ade80"/>
+  <path d="M470 248h40" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M490 228l20 20-20 20" stroke="#ffffff" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="400" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#ffffff">Application Help</text>
+</svg>
