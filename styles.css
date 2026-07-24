@@ -51,10 +51,12 @@ a {
 }
 
 .brand {
+  font-family: 'Copper Black', 'Copperplate', serif;
   font-weight: 900;
-  font-size: 1.7rem;
+  font-size: 3.5rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  color: var(--text);
 }
 
 .nav-btn,
@@ -124,6 +126,7 @@ h3 {
 }
 
 h1 {
+  font-family: 'Copper Black', 'Copperplate', serif;
   font-size: clamp(2rem, 4vw, 3.1rem);
   line-height: 1.15;
   margin-bottom: 1rem;
@@ -217,6 +220,56 @@ h1 {
   border-radius: 20px;
   max-width: 520px;
   width: 100%;
+}
+
+.appointment-form {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.appointment-form label {
+  display: grid;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.appointment-form input,
+.appointment-form select {
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: white;
+  color: var(--text);
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.form-note {
+  margin: 0;
+  padding: 0.95rem 1rem;
+  border-radius: 14px;
+  background: rgba(239, 246, 255, 0.7);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.form-note.success {
+  background: rgba(16, 185, 129, 0.12);
+  color: #0f766e;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+.form-note.error {
+  background: rgba(254, 226, 226, 0.9);
+  color: #b91c1c;
+  border: 1px solid rgba(239, 68, 68, 0.35);
 }
 
 .team-section {

@@ -20,6 +20,8 @@ if (form && note) {
 
     if (!name || !contact || !date) {
       note.textContent = 'Please fill in your name, contact, and preferred date before sending.';
+      note.classList.remove('success');
+      note.classList.add('error');
       return;
     }
 
@@ -30,11 +32,15 @@ if (form && note) {
       const body = encodeURIComponent(messageText);
       const mailtoUrl = `mailto:${emailAddress}?subject=${subject}&body=${body}`;
       note.textContent = 'Opening your email app so you can send the booking request.';
+      note.classList.remove('error');
+      note.classList.add('success');
       window.location.href = mailtoUrl;
     } else {
       const waMessage = encodeURIComponent(messageText);
       const url = `https://wa.me/${whatsappNumber}?text=${waMessage}`;
       note.textContent = 'Opening WhatsApp so you can send your booking request.';
+      note.classList.remove('error');
+      note.classList.add('success');
       window.open(url, '_blank');
     }
 
