@@ -625,8 +625,29 @@ select {
 @media (max-width: 860px) {
   .hero-content,
   .appointment-layout,
-  .card-grid {
+  .visit-card {
     grid-template-columns: 1fr;
+  }
+
+  .card-grid,
+  .workflow-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero {
+    padding: 1rem 0 2.4rem;
+  }
+
+  .hero-content {
+    padding-top: 1.8rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .product-card img {
+    height: 180px;
   }
 }
 
@@ -635,6 +656,69 @@ select {
     flex-direction: column;
     gap: 0.8rem;
     align-items: flex-start;
+  }
+
+  .brand {
+    font-size: 1.5rem;
+    letter-spacing: 0.04em;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .nav-btn,
+  .btn {
+    width: 100%;
+  }
+
+  .hero {
+    padding: 0.9rem 0 2rem;
+  }
+
+  .hero-content {
+    padding-top: 1.4rem;
+    gap: 1rem;
+  }
+
+  .hero-actions,
+  .form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-features {
+    gap: 0.6rem;
+  }
+
+  .hero-features span {
+    font-size: 0.84rem;
+  }
+
+  .section {
+    padding: 2.2rem 0;
+  }
+
+  .section-heading-image {
+    max-width: 320px;
+  }
+
+  .card-grid,
+  .workflow-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card img {
+    height: 150px;
+  }
+
+  .appointment-form,
+  .visit-card,
+  .workflow-card,
+  .hero-card {
+    border-radius: 18px;
   }
 
   .location-link {
@@ -649,5 +733,10 @@ select {
 
   .footer-content {
     flex-direction: column;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 0.7rem;
   }
 }
