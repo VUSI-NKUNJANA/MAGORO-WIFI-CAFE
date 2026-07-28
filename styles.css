@@ -477,6 +477,45 @@ select {
   font-size: 0.92rem;
 }
 
+.location-section {
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
+.location-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 1.4rem;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+}
+
+.location-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: rgba(14, 165, 233, 0.12);
+  color: var(--accent);
+}
+
+.location-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.location-address {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text);
+}
+
 .footer {
   padding: 1.5rem 0 2.2rem;
   color: var(--text);
@@ -485,6 +524,12 @@ select {
 
 .footer-links a {
   color: var(--text);
+}
+
+.creator-credit {
+  margin: 0.2rem 0 0;
+  font-size: 0.95rem;
+  color: var(--muted);
 }
 
 .btn-secondary {
