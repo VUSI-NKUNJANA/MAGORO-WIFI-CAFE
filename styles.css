@@ -322,14 +322,6 @@ h1 {
   .team-grid {
     grid-template-columns: 1fr;
   }
-
-  .workflow-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .visit-card {
-    grid-template-columns: 1fr;
-  }
 }
 
 .team-card-body {
@@ -643,17 +635,6 @@ select {
     flex-direction: column;
     gap: 0.8rem;
     align-items: flex-start;
-  }
-
-  h1 {
-    font-size: 1.7rem;
-    line-height: 1.1;
-    white-space: nowrap;
-  }
-
-  h2 {
-    font-size: 1.45rem;
-    line-height: 1.2;
   }
 
   .location-link {
