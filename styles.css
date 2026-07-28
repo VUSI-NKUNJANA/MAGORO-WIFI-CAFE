@@ -19,7 +19,6 @@ body {
   font-family: 'Inter', sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.7;
 }
 
 img {
@@ -107,6 +106,47 @@ a {
   gap: 2rem;
   padding-top: 3rem;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hero-content,
+  .appointment-layout,
+  .visit-card,
+  .workflow-grid,
+  .card-grid,
+  .team-grid {
+    display: block;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content > * + *,
+  .appointment-layout > * + *,
+  .visit-card > * + *,
+  .workflow-grid > * + *,
+  .card-grid > * + *,
+  .team-grid > * + * {
+    margin-top: 1rem;
+  }
+
+  .hero-content,
+  .appointment-layout,
+  .visit-card {
+    gap: 1rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
 }
 
 .eyebrow {
@@ -518,6 +558,46 @@ select {
     flex-direction: column;
     gap: 0.8rem;
     align-items: flex-start;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+};
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 860px) {
+  .hero-content,
+  .appointment-layout,
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .nav {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: flex-start;
+  }
+
+  .location-link {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .location-map-preview {
+    width: 100%;
+    height: 120px;
   }
 
   .footer-content {
