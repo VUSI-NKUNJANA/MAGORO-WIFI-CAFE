@@ -8,6 +8,49 @@ if (year) {
   year.textContent = new Date().getFullYear();
 }
 
+const revealElements = document.querySelectorAll(
+  'header, main section, footer, .hero-card, .product-card, .appointment-form, .visit-card, .workflow-card, .team-card, .section-heading, .hero-actions, .hero-features, .nav-links, .nav-btn, .brand, .hero-content > div'
+);
+
+const applyRevealDirections = () => {
+  const breakpoint = window.innerWidth * 0.6;
+
+  revealElements.forEach((element) => {
+    if (element.classList.contains('is-visible')) return;
+
+    const rect = element.getBoundingClientRect();
+    const elementCenter = rect.left + rect.width / 2;
+
+    if (elementCenter > breakpoint) {
+      element.classList.add('from-right');
+    } else {
+      element.classList.remove('from-right');
+    }
+  });
+};
+
+revealElements.forEach((element, index) => {
+  element.classList.add('reveal');
+  element.style.transitionDelay = `${Math.min(index * 80, 320)}ms`;
+});
+
+applyRevealDirections();
+window.addEventListener('resize', applyRevealDirections);
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+);
+
+revealElements.forEach((element) => revealObserver.observe(element));
+
 if (form && note) {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
