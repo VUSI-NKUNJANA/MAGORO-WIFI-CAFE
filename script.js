@@ -37,19 +37,40 @@ revealElements.forEach((element, index) => {
 applyRevealDirections();
 window.addEventListener('resize', applyRevealDirections);
 
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
-);
+const revealOnScroll = () => {
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
 
-revealElements.forEach((element) => revealObserver.observe(element));
+  revealElements.forEach((element) => {
+    if (element.classList.contains('is-visible')) return;
+
+    const rect = element.getBoundingClientRect();
+
+    if (rect.top < viewportHeight * 0.9) {
+      element.classList.add('is-visible');
+    }
+  });
+};
+
+if ('IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.08, rootMargin: '0px 0px -10% 0px' }
+  );
+
+  revealElements.forEach((element) => revealObserver.observe(element));
+} else {
+  revealOnScroll();
+}
+
+window.addEventListener('scroll', revealOnScroll, { passive: true });
+window.addEventListener('load', revealOnScroll);
 
 if (form && note) {
   form.addEventListener('submit', (event) => {
