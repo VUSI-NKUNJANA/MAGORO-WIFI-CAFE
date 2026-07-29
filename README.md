@@ -1,2 +1,2 @@
 # MAGORO WIFI CAFE
-Magoro websiTe by vee-tails
+Magoro websiTe by VUSI NKUNJANA
