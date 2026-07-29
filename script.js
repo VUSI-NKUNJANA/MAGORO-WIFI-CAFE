@@ -8,6 +8,7 @@ if (year) {
   year.textContent = new Date().getFullYear();
 }
 
+<<<<<<< HEAD
 const revealElements = document.querySelectorAll(
   'header, main section, footer, .hero-card, .product-card, .appointment-form, .visit-card, .workflow-card, .team-card, .section-heading, .hero-actions, .hero-features, .nav-links, .nav-btn, .brand, .hero-content > div'
 );
@@ -72,6 +73,8 @@ if ('IntersectionObserver' in window) {
 window.addEventListener('scroll', revealOnScroll, { passive: true });
 window.addEventListener('load', revealOnScroll);
 
+=======
+>>>>>>> 6043a7258e0df7b7898bc71bab2d16c5305b02cd
 if (form && note) {
   form.addEventListener('submit', (event) => {
     event.preventDefault();

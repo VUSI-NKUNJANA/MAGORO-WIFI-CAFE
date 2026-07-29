@@ -549,7 +549,11 @@ select {
 }
 
 .footer-links {
+<<<<<<< HEAD
   display: inline-block;
+=======
+  display: flex;
+>>>>>>> 6043a7258e0df7b7898bc71bab2d16c5305b02cd
   gap: 1rem;
 }
 
