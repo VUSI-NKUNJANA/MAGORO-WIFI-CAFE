@@ -391,7 +391,7 @@ h1 {
 }
 
 .workflow-grid {
-  display: grid;
+  display: block;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
@@ -470,7 +470,7 @@ h1 {
 }
 
 .visit-card {
-  display: grid;
+  display: block;
   grid-template-columns: 0.95fr 1.05fr;
   gap: 1.5rem;
   align-items: center;
@@ -549,7 +549,7 @@ select {
 }
 
 .footer-links {
-  display: flex;
+  display: inline-block;
   gap: 1rem;
 }
 
@@ -599,7 +599,7 @@ select {
   }
 
   h1 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     line-height: 1.1;
     white-space: nowrap;
   }
